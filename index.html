@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Web Technology - lab 1
+    </title>
+    <style>
+        #myDiv{
+            border: 1px solid silver;
+            background-color: lightblue;
+            font-size:  18px;
+            text-align: center;
+        }
+        button{
+            width: 40px;
+            padding: 10px;
+        }
+        .but1{
+            width:auto;
+            padding: 10px 11px 10px 10px;
+        }
+    </style>
+</head>
+
+<body class="dark:text-white light:text-black">
+
+<div >
+    <input type="text" id="display" disabled>
+
+</div>
+<div>
+    <button >+</button>
+    <button >-</button>
+    <button >*</button>
+   
+</div>
+<div>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+</div>
+<div>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+</div>
+<div>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+</div>
+<div>
+    <button >0</button>
+    <button >.</button>
+    <button>=</button>
+</div>
+    <!-- your app code goes here -->
+
+    <!-- special scripts for integration in App Gallery - must be placed at the bottom of the HTML after your code -->
+    <script>
+        // custom config for the MTW app 
+        const mtwAppConfig = {
+            border: true // app border in the MTW page                    
+        }
+
+        ///////////////////////////////////////////////////////
+        // implement this functions in order to use private API        
+        const sendPrivateApiRequest = async () => {
+            // your code here:
+            // sendRequestToParent({ cat: 'getAssets' })
+        }        
+
+        const acceptPrivateApiResponse = async (data) => {
+            // process received data here:
+            // console.log(data)
+        }
+
+        // use this in order to send on document load
+        document.addEventListener('DOMContentLoaded', () => {
+            // your code here:
+            //sendRequestToParent({ method: 'getAssets' })
+        })
+
+    </script>
+    <script src="https://morethanwallet.com/appstore/index.js"></script>
+</body>
+
+</html>
